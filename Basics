@@ -1,0 +1,5 @@
+# Horizontal privilage escelation
+#### Expand  reach over the compromised system by taking over a different user who is on the same privilege level eg. normal user -> normal user.
+
+# Vertical privilage escelation
+#### Attempt to gain higher privileges or access, with an already compromised account 
