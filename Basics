@@ -3,3 +3,12 @@
 
 # Vertical privilage escelation
 #### Attempt to gain higher privileges or access, with an already compromised account 
+
+# Enumeration 
+## LinEnum 
+#### simple bash script that performs common commands related to privilege escalation, saving time and allowing more effort to be put toward getting root.
+
+## Adding LinEnum to target:
+1. start Python web server eg. "python3 -m http.server 8000" 
+2. on target use "wget" to get file from local machine
+3. make file executable - "chmod +x FILENAME.sh".
