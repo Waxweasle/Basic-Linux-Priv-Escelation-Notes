@@ -5,9 +5,8 @@
 # Vertical privilage escelation
 #### Attempt to gain higher privileges or access, with an already compromised account 
 
-# Enumeration 
-## LinEnum 
-#### simple bash script that performs common commands related to privilege escalation, saving time and allowing more effort to be put toward getting root.
+# Enumeration with LinEnum 
+#### A simple bash script that performs common commands related to privilege escalation, saving time and allowing more effort to be put toward getting root.
 #### https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh
 
 ## Adding LinEnum to target:
